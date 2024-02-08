@@ -11,7 +11,7 @@ app.set("view engine", "ejs");
 
 // Connect To MongoDB
 const dbURL =
-  "mongodb+srv://ramtinhd:abc123456rh@nodejs-course.cgkzupl.mongodb.net/nodejs-course?retryWrites=true&w=majority";
+  "mongodb+srv://<username>@<password>.cgkzupl.mongodb.net/nodejs-course?retryWrites=true&w=majority";
 
 const main = async () => {
   await mongoose.connect(dbURL);
