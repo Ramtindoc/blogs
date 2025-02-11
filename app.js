@@ -3,9 +3,8 @@ const app = express();
 const mongoose = require("mongoose");
 const morgan = require("morgan");
 const { result } = require("lodash");
-const blogRoutes = require('./router/blogRoutes')
+const blogRoutes = require("./router/blogRoutes");
 const Blog = require("./model/blog");
-
 
 app.set("view engine", "ejs");
 
@@ -72,16 +71,16 @@ const main = async () => {
       .catch((err) => console.log(err));
   });
 
-  app.get("/", (req,res) =>{
-    res.redirect("/blogs")
-  })
+  app.get("/", (req, res) => {
+    res.redirect("/blogs");
+  });
 
   app.get("/about", (req, res) => {
     res.render("about", { title: "about" });
   });
 
-    // form route 
-app.use(blogRoutes)
+  // form route
+  app.use(blogRoutes);
 
   app.use((req, res) => {
     res.status(404).render("404", { title: "404" });
