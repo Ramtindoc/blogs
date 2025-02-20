@@ -9,8 +9,8 @@ const Blog = require("./model/blog");
 app.set("view engine", "ejs");
 
 // Connect To MongoDB
-const dbURL =
-  "mongodb+srv://<username>@<password>.cgkzupl.mongodb.net/nodejs-course?retryWrites=true&w=majority";
+
+const dbURL = "mongodb://localhost:27017";
 
 const main = async () => {
   await mongoose.connect(dbURL);

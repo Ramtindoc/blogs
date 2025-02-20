@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,500&display=swap');
 
-.fa-home{
+/* .fa-home{
     float: right;
-}
+} */
 
 .nav {
     list-style-type: none;
     margin: 0;
     padding: 20px;
     overflow: hidden;
-    background-color: greenyellow;
+    /* background-color: rgb(110, 110, 110); */
 
 
 }
@@ -21,7 +21,7 @@ li {
 li a {
     display: block;
     padding-right: 300px;
-    color: #ffffff  ;
+    color: #000000  ;
     text-decoration: none;
     font-size: large;
 }
